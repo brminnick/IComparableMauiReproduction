@@ -2,7 +2,7 @@
 
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             xmlns:library="clr-namespace:Library;assembly=Library"
              xmlns:vm="clr-namespace:MauiComparableRepro"
              x:DataType="vm:MainViewModel"
              x:Class="MauiComparableRepro.UpdatingContent">
@@ -18,7 +18,7 @@
         <BoxView />
 
         <ActivityIndicator
-            IsRunning="{Binding UpdateProgress, Converter={toolkit:CompareConverter ComparingValue={StaticResource ComparingValue}, ComparisonOperator=Smaller, FalseObject=False, TrueObject=True}}" />
+            IsRunning="{Binding UpdateProgress, Converter={library:CompareConverter ComparingValue={StaticResource ComparingValue}, ComparisonOperator=Smaller, FalseObject=False, TrueObject=True}}" />
 
         <Label Text="{Binding Message}" />
     </VerticalStackLayout>
