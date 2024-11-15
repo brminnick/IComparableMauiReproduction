@@ -5,7 +5,7 @@
              xmlns:library="clr-namespace:Library;assembly=Library"
              xmlns:vm="clr-namespace:MauiComparableRepro"
              x:DataType="vm:MainViewModel"
-             x:Class="MauiComparableRepro.MainPage">
+             x:Class="MauiComparableRepro.UpdatingContent">
 
     <ContentPage.Resources>
         <x:String x:Key="ComparingValue">1.0</x:String>
